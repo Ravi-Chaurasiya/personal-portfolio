@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -21,9 +20,9 @@ const projects: Project[] = [
     codeUrl: "#"
   },
   {
-    title: "Captain Desktop Voice Assistant",
-    description: "An intelligent voice assistant that seamlessly combines automation, hotword detection, and smart commands to make your digital life effortless..",
-    technologies: ["HTML", "JavaScript", "Python", "CSS","Sqlite3"],
+    title: "Desktop Voice Assistant",
+    description: " Captain an intelligent voice assistant that seamlessly combines automation, hotword detection, and smart commands to make your digital life effortless..",
+    technologies: ["HTML", "JavaScript", "Python", "CSS","Sqlite3",],
     demoUrl: "#",
     codeUrl: "https://github.com/Ravi-Chaurasiya/Captain--voice-assistant"
   },
@@ -31,8 +30,8 @@ const projects: Project[] = [
     title: "Portfolio Website",
     description: "A modern portfolio website showcasing projects and skills with a clean, minimalist design.",
     technologies: ["NextJS", "TypeScript", "Tailwind CSS"],
-    demoUrl: "#",
-    codeUrl: "#"
+    demoUrl: "https://personal-portfolio-blond-tau.vercel.app/",
+    codeUrl: "https://github.com/Ravi-Chaurasiya/personal-portfolio"
   },
   {
     title: "Blog Platform",
@@ -117,10 +116,16 @@ const Projects = () => {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between border-t border-lavender-100 pt-4">
-                <Button className="border-lavender-300 hover:bg-lavender-50" onClick={() => window.open(project.demoUrl, '_blank')}>
+                <Button
+                  className="border-lavender-300 hover:bg-lavender-100 active:bg-lavender-200 transition-colors"
+                  onClick={() => window.open(project.demoUrl, '_blank')}
+                >
                   Live Demo
                 </Button>
-                <Button className="border-lavender-300 hover:bg-lavender-50" onClick={() => window.open(project.codeUrl, '_blank')}>
+                <Button
+                  className="border-lavender-300 hover:bg-lavender-100 active:bg-lavender-200 transition-colors"
+                  onClick={() => window.open(project.codeUrl, '_blank')}
+                >
                   View Code
                 </Button>
               </CardFooter>

@@ -54,7 +54,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           {/* Experience Tile */}
           <Card 
-            ref={el => cardRefs.current[0] = el}
+            ref={el => { cardRefs.current[0] = el; }}
             className="border border-lavender-200 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-lavender-50/70 group"
           >
             <CardHeader className="flex flex-col items-center space-x-2 pb-2 border-b border-lavender-200 bg-lavender-100/50 group-hover:bg-lavender-200/80 transition-colors">
@@ -74,7 +74,7 @@ const About = () => {
 
           {/* Education Tile */}
           <Card 
-            ref={el => cardRefs.current[1] = el}
+            ref={el => { cardRefs.current[1] = el; }}
             className="border border-lavender-200 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-lavender-50/70 group"
           >
             <CardHeader className="flex flex-col items-center space-x-2 pb-2 border-b border-lavender-200 bg-lavender-100/50 group-hover:bg-lavender-200/80 transition-colors">
@@ -95,7 +95,7 @@ const About = () => {
 
         {/* Achievements & Leadership Tile */}
         <Card 
-          ref={el => cardRefs.current[2] = el}
+          ref={el => {cardRefs.current[2] = el;}}
           className="border border-lavender-200 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-lavender-50/70 group"
         >
           <CardHeader className="flex flex-col items-center space-x-2 pb-2 border-b border-lavender-200 bg-lavender-100/50 group-hover:bg-lavender-200/80 transition-colors">

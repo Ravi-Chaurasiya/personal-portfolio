@@ -21,11 +21,11 @@ const projects: Project[] = [
     codeUrl: "#"
   },
   {
-    title: "Task Management App",
-    description: "A drag-and-drop task management application with real-time updates and team collaboration features.",
-    technologies: ["React", "JavaScript", "Firebase", "CSS"],
+    title: "Captain Desktop Voice Assistant",
+    description: "An intelligent voice assistant that seamlessly combines automation, hotword detection, and smart commands to make your digital life effortless..",
+    technologies: ["HTML", "JavaScript", "Python", "CSS","Sqlite3"],
     demoUrl: "#",
-    codeUrl: "#"
+    codeUrl: "https://github.com/Ravi-Chaurasiya/Captain--voice-assistant"
   },
   {
     title: "Portfolio Website",
@@ -110,17 +110,17 @@ const Projects = () => {
                 <p className="text-muted-foreground mb-6">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary" className="bg-lavender-100 text-lavender-700 hover:bg-lavender-200">
+                    <Badge key={techIndex} className="bg-lavender-100 text-lavender-700 hover:bg-lavender-200">
                       {tech}
                     </Badge>
                   ))}
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between border-t border-lavender-100 pt-4">
-                <Button variant="outline" size="sm" className="border-lavender-300 hover:bg-lavender-50" onClick={() => window.open(project.demoUrl, '_blank')}>
+                <Button className="border-lavender-300 hover:bg-lavender-50" onClick={() => window.open(project.demoUrl, '_blank')}>
                   Live Demo
                 </Button>
-                <Button variant="outline" size="sm" className="border-lavender-300 hover:bg-lavender-50" onClick={() => window.open(project.codeUrl, '_blank')}>
+                <Button className="border-lavender-300 hover:bg-lavender-50" onClick={() => window.open(project.codeUrl, '_blank')}>
                   View Code
                 </Button>
               </CardFooter>

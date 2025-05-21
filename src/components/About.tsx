@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Briefcase, School, Star } from "lucide-react";
@@ -102,17 +101,27 @@ const About = () => {
             <Star className="h-5 w-5 text-lavender-500 group-hover:text-lavender-700 transition-colors mb-1" />
             <CardTitle className="text-center">Achievements & Leadership</CardTitle>
           </CardHeader>
-          <CardContent className="p-0 max-h-64">
-            <ScrollArea className="max-h-64">
-              <div className="p-6">
-                <p className="text-base leading-relaxed text-gray-400 group-hover:text-gray-600 transition-colors">
-                  Since February 2022, I have been co-leading the Open Source Development Club at Echelon Institute of Technology, 
-                  working alongside the club head to foster a strong coding culture with over 50+ student developers. 
-                  I've organized 15+ workshops and collaborative coding sessions, where I mentored peers in FOSS applications and projects. 
-                  Through these initiatives, I've honed my leadership, project management, and community-building skills, 
-                  contributing to a more engaged and collaborative development environment.
-                </p>
+          <CardContent className="p-0">
+            <ScrollArea className="max-h-32 overflow-y-auto relative">
+              <div className="p-6 space-y-4">
+                <div className="fade-scroll-up">
+                  <p className="text-base leading-relaxed text-gray-400 group-hover:text-gray-600 transition-colors">
+                    Since February 2022, I have been co-leading the Open Source Development Club at Echelon Institute of Technology, 
+                    working alongside the club head to foster a strong coding culture with over 50+ student developers. 
+                    I've organized 15+ workshops and collaborative coding sessions, where I mentored peers in FOSS applications and projects. 
+                    Through these initiatives, I've honed my leadership, project management, and community-building skills, 
+                    contributing to a more engaged and collaborative development environment.
+                  </p>
+                </div>
+                <div className="fade-scroll-up">
+                  <p className="text-base leading-relaxed text-gray-400 group-hover:text-gray-600 transition-colors">
+                    In my first year of college, my team and I participated in our annual project fest, <span className="font-semibold text-lavender-700">Techelon</span>. Competing against numerous talented groups, we secured both <span className="font-semibold text-lavender-700">first and third positions</span> in different categories for best project. This achievement not only highlighted our technical skills and creativity, but also demonstrated our ability to collaborate, innovate, and excel under pressure. It was a proud moment that set a strong foundation for my journey in leadership and teamwork.
+                  </p>
+                </div>
               </div>
+              {/* Fade overlays for top and bottom */}
+              <div className="pointer-events-none absolute left-0 right-0 top-0 h-6 bg-gradient-to-b from-lavender-50/90 to-transparent z-10" />
+              <div className="pointer-events-none absolute left-0 right-0 bottom-0 h-6 bg-gradient-to-t from-lavender-50/90 to-transparent z-10" />
             </ScrollArea>
           </CardContent>
         </Card>

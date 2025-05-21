@@ -28,7 +28,7 @@ const Contact = () => {
             
             {/* LinkedIn Contact */}
             <a 
-              href="https://www.linkedin.com/in/ravi-chaurasiya-ap/" 
+              href="https://www.linkedin.com/in/ravichaurasiya04/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-4 py-4 px-6 rounded-xl transition-all hover:bg-lavender-50 hover:shadow-md group border border-lavender-200"
@@ -37,7 +37,7 @@ const Contact = () => {
                 <Linkedin className="h-6 w-6 text-lavender-700" />
               </div>
               <div className="flex-1">
-                <p className="text-lavender-600">linkedin.com/in/ravi-chaurasiya-ap</p>
+                <p className="text-lavender-600">Ravi Chaurasiya</p>
               </div>
             </a>
           </div>

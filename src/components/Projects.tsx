@@ -22,7 +22,7 @@ const projects: Project[] = [
   {
     title: "Desktop Voice Assistant",
     description: " Captain an intelligent voice assistant that seamlessly combines automation, hotword detection, and smart commands to make your digital life effortless..",
-    technologies: ["HTML", "JavaScript", "Python", "CSS","Sqlite3",],
+    technologies: ["HTML", "JavaScript", "Python", "CSS",],
     demoUrl: "#",
     codeUrl: "https://github.com/Ravi-Chaurasiya/Captain--voice-assistant"
   },
@@ -95,19 +95,19 @@ const Projects = () => {
         </div>
         
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className="border border-lavender-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow animate-fade-in bg-gradient-to-br from-white to-lavender-50"
+              className="flex flex-col h-full min-h-[340px] max-h-[340px] border border-lavender-200 overflow-hidden shadow-lg hover:shadow-xl transition-shadow animate-fade-in bg-gradient-to-br from-white to-lavender-50"
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               <CardHeader className="border-b border-lavender-100">
                 <CardTitle>{project.title}</CardTitle>
               </CardHeader>
-              <CardContent className="pt-6">
+              <CardContent className="pt-6 flex-1 flex flex-col">
                 <p className="text-muted-foreground mb-6">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge key={techIndex} className="bg-lavender-100 text-lavender-700 hover:bg-lavender-200">
                       {tech}
@@ -115,7 +115,7 @@ const Projects = () => {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between border-t border-lavender-100 pt-4">
+              <CardFooter className="flex justify-between border-t border-lavender-100 pt-4 mt-auto">
                 <Button
                   className="border-lavender-300 hover:bg-lavender-100 active:bg-lavender-200 transition-colors"
                   onClick={() => window.open(project.demoUrl, '_blank')}

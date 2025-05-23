@@ -41,7 +41,7 @@ const About = () => {
       <div className="container-custom">
         <h2 className="section-title text-center">About Me</h2>
         <p className="section-subtitle text-center mx-auto mb-8 max-w-4xl text-gray-800 font-medium text-xl">
-          I'm a passionate Web Developer and UI/UX Designer, currently finishing my B.Tech in Computer Science and Engineering at 20. 
+          I'm a passionate Web Developer and UI/UX Designer, currently finishing my B.Tech in Computer Science and Engineering at 21. 
           I enjoy creating efficient, scalable solutions for both web and mobile platforms, while focusing on user-centric design. 
           Always eager to learn, I'm committed to staying on top of the latest technologies to deliver innovative, impactful results.
         </p>

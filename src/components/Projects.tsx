@@ -52,7 +52,7 @@ const projects: Project[] = [
     description: "Developed a dynamic online platform using HTML, CSS, and JavaScript, offering a diverse collection of engaging games within a single, user-friendly website..",
     technologies: ["Html", "CSS", "JavaScript",],
     demoUrl: "https://github.com/Ravi-Chaurasiya/Play-Plus",
-    codeUrl: "https://github.com/Ravi-Chaurasiya/Play-Plus"
+    codeUrl: "#"
   }
 ];
 

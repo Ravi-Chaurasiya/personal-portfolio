@@ -33,26 +33,26 @@ const projects: Project[] = [
     demoUrl: "https://personal-portfolio-blond-tau.vercel.app/",
     codeUrl: "https://github.com/Ravi-Chaurasiya/personal-portfolio"
   },
-  {
-    title: "Blog Platform",
+  /*{
+    title: "FlyingKing",
     description: "A feature-rich blog platform with markdown support, comments, and user authentication.",
     technologies: ["React", "NextJS", "Node.js", "MongoDB"],
     demoUrl: "#",
     codeUrl: "#"
+  },*/
+  {
+    title: "FlyKing",
+    description: "Developed a React Native mobile game inspired by Flappy Bird, implementing custom physics without animation libraries.",
+    technologies: ["React Native", "Custom Physics", "Java",],
+    demoUrl: "https://github.com/Ravi-Chaurasiya/flyking",
+    codeUrl: "https://github.com/Ravi-Chaurasiya/flyking"
   },
   {
-    title: "Weather Dashboard",
-    description: "A weather dashboard with location search, forecasts, and animated weather visualizations.",
-    technologies: ["JavaScript", "React", "APIs", "CSS"],
-    demoUrl: "#",
-    codeUrl: "#"
-  },
-  {
-    title: "Chat Application",
-    description: "Real-time chat application with private messaging, group chats, and file sharing capabilities.",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-    demoUrl: "#",
-    codeUrl: "#"
+    title: "Play Plus",
+    description: "Developed a dynamic online platform using HTML, CSS, and JavaScript, offering a diverse collection of engaging games within a single, user-friendly website..",
+    technologies: ["Html", "CSS", "JavaScript",],
+    demoUrl: "https://github.com/Ravi-Chaurasiya/Play-Plus",
+    codeUrl: "https://github.com/Ravi-Chaurasiya/Play-Plus"
   }
 ];
 

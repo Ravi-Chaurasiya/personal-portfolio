@@ -20,7 +20,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 className="rounded-full border-lavender-200 hover:bg-lavender-50 hover-lift"
-                onClick={() => window.open('/resume.pdf', '_blank')}
+                onClick={() => window.open('/Ravi_Chaurasiya_Resume_V5.pdf', '_blank')}
               >
                 <ArrowDown className="mr-2 h-4 w-4" />
                 Download Resume
